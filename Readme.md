@@ -23,25 +23,25 @@ updates efficiently.
 ## Screenshots
 
 **Main Menu**:
-![](screenshots/mainmenu.png "Main Application Menu")
+![](src/screenshots/mainmenu.png "Main Application Menu")
 
 **Generate Bill Page**:
-![](screenshots/generatebill.png "Page for generating new bills")
+![](src/screenshots/generatebill.png "Page for generating new bills")
 
 **Discount Page**:
-![](screenshots/applydiscount.png "Page to apply discounts")
+![](src/screenshots/applydiscount.png "Page to apply discounts")
 
 **Fine Page**:
-![](screenshots/fine.png "Page to apply fines")
+![](src/screenshots/fine.png "Page to apply fines")
 
 **Pay Bill Page**:
-![](screenshots/paybill.png "Page for bill payment")
+![](src/screenshots/paybill.png "Page for bill payment")
 
 **Revenue Page**:
-![](screenshots/revenue.png "Page displaying revenue reports")
+![](src/screenshots/revenue.png "Page displaying revenue reports")
 
 **Update Taxes Page**:
-![](screenshots/taxes.png "Page for updating tax rates")")
+![](src/screenshots/taxes.png "Page for updating tax rates")")
 
 ## Project Structure
 ```
