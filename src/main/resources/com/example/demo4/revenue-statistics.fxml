@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo4.RevenueStatisticsController" prefHeight="250.0" prefWidth="400.0" style="-fx-background-color: #f1f8e9;">
+    <children>
+        <Label layoutX="30" layoutY="30" text="Total Company Revenue:" />
+        <Label fx:id="revenueLabel" layoutX="200" layoutY="30" text="..." style="-fx-font-weight: bold;" />
+    </children>
+</Pane>

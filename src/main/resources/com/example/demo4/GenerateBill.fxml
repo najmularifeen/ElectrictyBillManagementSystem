@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox spacing="10.0" alignment="CENTER" xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.demo4.GenerateBillController">
+
+    <padding><Insets top="20" right="20" bottom="20" left="20"/></padding>
+
+    <Label text="Generate Bill" style="-fx-font-size: 20px;"/>
+
+    <HBox spacing="10">
+        <Label text="CNIC:"/>
+        <TextField fx:id="cnicField" promptText="Enter 13-digit CNIC"/>
+        <Button text="Check" onAction="#onCheckCnic"/>
+    </HBox>
+
+    <HBox spacing="10">
+        <Label text="Category:"/>
+        <ComboBox fx:id="categoryBox" prefWidth="150"/>
+    </HBox>
+
+    <HBox spacing="10">
+        <Label text="Name:"/>
+        <TextField fx:id="nameField" prefWidth="200"/>
+    </HBox>
+
+    <HBox spacing="10">
+        <Label text="Address:"/>
+        <TextField fx:id="addressField" prefWidth="200"/>
+    </HBox>
+
+    <HBox spacing="10">
+        <Label text="Previous Units:"/>
+        <TextField fx:id="previousUnitField" promptText="Auto-filled" prefWidth="100"/>
+    </HBox>
+
+    <HBox spacing="10">
+        <Label text="Current Units:"/>
+        <TextField fx:id="currentUnitField" prefWidth="100"/>
+    </HBox>
+
+    <Button text="Generate Bill" onAction="#onGenerateBill"/>
+
+</VBox>

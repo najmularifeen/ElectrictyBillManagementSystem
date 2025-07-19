@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="450.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to bottom right, #8e2de2, #4a00e0);" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo4.HelloController">
+
+   <!-- Title -->
+   <top>
+      <VBox alignment="CENTER" spacing="5.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER">
+         <padding><Insets bottom="20.0" left="20.0" right="20.0" top="20.0" /></padding>
+         <Label text="Electricity Bill Management System" textFill="WHITE">
+            <font><Font name="System Bold" size="24.0" /></font>
+         </Label>
+      </VBox>
+   </top>
+
+   <!-- Center Buttons Grid -->
+   <center>
+      <GridPane alignment="CENTER" hgap="20" style="-fx-background-color: gray;" vgap="15" BorderPane.alignment="CENTER">
+         <padding><Insets bottom="10.0" left="10.0" right="10.0" top="10.0" /></padding>
+
+         <Button onAction="#handleGenerate" style="-fx-pref-width: 220px; -fx-background-color: linear-gradient(#ffffff, #dddddd); -fx-font-size: 14px;" text="Generate Bills">
+            <font>
+               <Font name="Arial Narrow Bold" size="12.0" />
+            </font></Button>
+
+         <Button onAction="#handleDiscount" style="-fx-pref-width: 220px; -fx-background-color: linear-gradient(#ffffff, #dddddd); -fx-font-size: 14px;" text="Apply Discount" GridPane.columnIndex="1" />
+
+         <Button onAction="#handleLatePayment" style="-fx-pref-width: 220px; -fx-background-color: linear-gradient(#ffffff, #dddddd); -fx-font-size: 14px;" text="Apply Late Payment Fine" GridPane.rowIndex="1" />
+
+         <Button onAction="#handlePay" style="-fx-pref-width: 220px; -fx-background-color: linear-gradient(#ffffff, #dddddd); -fx-font-size: 14px;" text="Pay Bill " GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+         <Button onAction="#handleRevenue" style="-fx-pref-width: 220px; -fx-background-color: linear-gradient(#ffffff, #dddddd); -fx-font-size: 14px;" text="Show Revenue" GridPane.rowIndex="2" />
+
+         <Button onAction="#handleTaxes" style="-fx-pref-width: 220px; -fx-background-color: linear-gradient(#ffffff, #dddddd); -fx-font-size: 14px;" text="Update Tax" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+      </GridPane>
+   </center>
+
+   <!-- Bottom: Message + Exit -->
+   <bottom>
+      <VBox alignment="CENTER" spacing="10.0" style="-fx-background-color: gray;" BorderPane.alignment="CENTER">
+         <padding><Insets bottom="15.0" left="15.0" right="15.0" top="15.0" /></padding>
+         <Label fx:id="welcomeText" prefWidth="400" textFill="WHITE" wrapText="true">
+            <font><Font size="14.0" /></font>
+         </Label>
+         <Button onAction="#handleExit" style="-fx-background-color: black; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 10; -fx-padding: 8 20;" text="7. Exit" />
+      </VBox>
+   </bottom>
+</BorderPane>
